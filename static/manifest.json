@@ -1,0 +1,25 @@
+{
+	"manifest_version": 3,
+	"name": "ShopIt",
+	"description": "Shopping Sidebar",
+	"version": "1.0.0",
+	"action": {
+		"default_title": "Open ShopIt"
+	},
+	"background": {
+		"service_worker": "service-worker.js"
+	},
+	"side_panel": {
+		"default_path": "index.html"
+	},
+	"commands": {
+		"toggle-sidebar": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+1"
+			},
+			"description": "Toggle the sidebar panel"
+		}
+	},
+
+	"permissions": ["sidePanel", "activeTab", "contextMenus", "commands"]
+}
